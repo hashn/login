@@ -1,0 +1,29 @@
+nav{
+    background-color: rgb(7, 132, 241);
+    color:white;
+    padding: 30px 60px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover{
+    color: rgb(7, 247, 7);
+    text-decoration: none;
+}

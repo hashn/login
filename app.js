@@ -7,7 +7,10 @@ const dotenv = require('dotenv');
 //path
 const path = require('path');
 
+const cookieParser = require('cookie-parser');
+
 dotenv.config({ path: './.env'});
+
 
 //start the server
 const app = express();
@@ -28,6 +31,7 @@ app.use(express.urlencoded({ extended: false}));
 
 //parse JSON bodies(As sent by API clients)
 app.use(express.json()); 
+app.use(cookieParser());
 
 
 
